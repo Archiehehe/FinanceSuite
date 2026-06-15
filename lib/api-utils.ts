@@ -112,6 +112,43 @@ export async function fetchYahooQuote(ticker: string) {
   return out
 }
 
+export async function fetchYahooSummary(ticker: string) {
+  const cached = getCache(`yhs:${ticker}`)
+  if (cached) return cached
+  const d = await jsonFetch(`https://query1.finance.yahoo.com/v10/finance/quoteSummary/${uc(ticker)}?modules=defaultKeyStatistics%2CfinancialData%2CsummaryDetail`, { headers: { 'User-Agent': 'Mozilla/5.0' } }, 8000)
+  const q = d?.quoteSummary?.result?.[0]
+  if (!q) return null
+  const ks = q.defaultKeyStatistics ?? {}
+  const fd = q.financialData ?? {}
+  const sd = q.summaryDetail ?? {}
+  const out = {
+    beta: ks.beta?.raw ?? null,
+    forwardPe: ks.forwardPE?.raw ?? null,
+    pegRatio: ks.pegRatio?.raw ?? null,
+    marketCap: fd.marketCap?.raw ?? ks.marketCap?.raw ?? null,
+    enterpriseValue: fd.enterpriseValue?.raw ?? null,
+    revenue: fd.totalRevenue?.raw ?? null,
+    revenueGrowth: fd.revenueGrowth?.raw ?? null,
+    grossMargin: fd.grossMargins?.raw ?? null,
+    operatingMargin: fd.operatingMargins?.raw ?? null,
+    netMargin: fd.profitMargins?.raw ?? null,
+    roe: fd.returnOnEquity?.raw ?? null,
+    roa: fd.returnOnAssets?.raw ?? null,
+    debtToEquity: fd.debtToEquity?.raw ?? sd.debtToEquity?.raw ?? null,
+    currentRatio: fd.currentRatio?.raw ?? sd.currentRatio?.raw ?? null,
+    quickRatio: fd.quickRatio?.raw ?? sd.quickRatio?.raw ?? null,
+    dividendYield: sd.dividendYield?.raw ?? fd.dividendYield?.raw ?? null,
+    eps: fd.earningsPerShare?.raw ?? ks.earningsPerShare?.raw ?? null,
+    sharesOut: ks.sharesOutstanding?.raw ?? null,
+    bookValue: ks.bookValue?.raw ?? null,
+    priceToBook: ks.priceToBook?.raw ?? fd.priceToBook?.raw ?? null,
+    sector: sd.sector ?? fd.sector ?? null,
+    industry: sd.industry ?? fd.industry ?? null,
+  }
+  setCache(`yhs:${ticker}`, out, 3600)
+  return out
+}
+
 export async function fetchYahooHistory(ticker: string, range = '1y') {
   const cached = getCache(`yhh:${ticker}:${range}`)
   if (cached) return cached
