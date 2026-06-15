@@ -1,12 +1,12 @@
 export const TOOLS = [
   {
-    id: 'superinvestor-lab',
-    name: 'SuperInvestor Lab',
-    tagline: 'Analyze stocks through legendary investors',
-    description: 'See how any stock stacks up against the philosophies of 25+ legendary investors — Graham, Buffett, Lynch, and more.',
-    icon: 'GraduationCap',
-    color: 'purple',
-    route: '/superinvestor-lab',
+    id: 'sector-momentum',
+    name: 'Sector Momentum',
+    tagline: 'Sector rotation & thematic momentum',
+    description: 'Track sector rotation across GICS sectors and thematic baskets with relative strength, volatility, and RSI metrics.',
+    icon: 'Activity',
+    color: 'orange',
+    route: '/sector-momentum',
     status: 'live' as const,
   },
   {
@@ -40,6 +40,16 @@ export const TOOLS = [
     status: 'live' as const,
   },
   {
+    id: 'superinvestor-lab',
+    name: 'SuperInvestor Lab',
+    tagline: 'Analyze stocks through legendary investors',
+    description: 'See how any stock stacks up against the philosophies of 25+ legendary investors — Graham, Buffett, Lynch, and more.',
+    icon: 'GraduationCap',
+    color: 'purple',
+    route: '/superinvestor-lab',
+    status: 'live' as const,
+  },
+  {
     id: 'ath-distance',
     name: 'ATH Distance',
     tagline: 'Distance from all-time-highs by sector',
@@ -47,16 +57,6 @@ export const TOOLS = [
     icon: 'Mountain',
     color: 'emerald',
     route: '/ath-distance',
-    status: 'live' as const,
-  },
-  {
-    id: 'sector-momentum',
-    name: 'Sector Momentum',
-    tagline: 'Sector rotation & thematic momentum',
-    description: 'Track sector rotation across GICS sectors and thematic baskets with relative strength, volatility, and RSI metrics.',
-    icon: 'Activity',
-    color: 'orange',
-    route: '/sector-momentum',
     status: 'live' as const,
   },
   {
