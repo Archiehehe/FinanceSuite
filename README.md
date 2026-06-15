@@ -6,6 +6,7 @@ Personal finance toolbox — six embedded tools in a single dark-themed dashboar
 
 | Tool | Description |
 |------|-------------|
+| **SuperInvestor Lab** | Analyze stocks through the philosophies of legendary investors — Graham, Buffett, Lynch, and more |
 | **SnapJudgement** | Enter any ticker → structured investment brief with valuation, sentiment, financials, and price behavior |
 | **Market Narrative** | Translates price action into structured narratives with sector and regime context |
 | **DipSnipe** | Identify daily stock market losers across sectors, industries, and market-cap ranges |

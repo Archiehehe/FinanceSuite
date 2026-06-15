@@ -1,5 +1,15 @@
 export const TOOLS = [
   {
+    id: 'superinvestor-lab',
+    name: 'SuperInvestor Lab',
+    tagline: 'Analyze stocks through legendary investors',
+    description: 'See how any stock stacks up against the philosophies of 25+ legendary investors — Graham, Buffett, Lynch, and more.',
+    icon: 'GraduationCap',
+    color: 'purple',
+    route: '/superinvestor-lab',
+    status: 'live' as const,
+  },
+  {
     id: 'snap-judgement',
     name: 'SnapJudgement',
     tagline: 'Five-minute investment briefs',
