@@ -51,7 +51,7 @@ const gradientMap: Record<string, string> = {
 export default function Dashboard() {
   return (
     <div className="min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Header */}
         <header className="mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -69,7 +69,7 @@ export default function Dashboard() {
         </header>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {TOOLS.map((tool, i) => {
             const Icon = iconMap[tool.icon] || Zap
             return (
@@ -91,7 +91,7 @@ export default function Dashboard() {
                       </span>
                     </div>
                     <p className={cn("text-xs font-mono mb-2", taglineColorMap[tool.color])}>{tool.tagline}</p>
-                    <p className="text-sm text-muted-foreground line-clamp-2">{tool.description}</p>
+                    <p className="text-sm text-muted-foreground">{tool.description}</p>
                   </div>
                 </div>
                 <div className={cn("absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity", gradientMap[tool.color])} />
