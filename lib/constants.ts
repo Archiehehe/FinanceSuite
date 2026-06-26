@@ -1,5 +1,15 @@
 export const TOOLS = [
   {
+    id: 'earnings-intel',
+    name: 'Earnings Intel',
+    tagline: 'Earnings calendar & insider tracking',
+    description: 'Track earnings reports, analyst estimates, price reactions, and insider transactions across your portfolio and watchlist.',
+    icon: 'BarChart3',
+    color: 'blue',
+    route: '/earnings-intel',
+    status: 'live' as const,
+  },
+  {
     id: 'sector-momentum',
     name: 'Sector Momentum',
     tagline: 'Sector rotation & thematic momentum',
