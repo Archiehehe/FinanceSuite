@@ -104,7 +104,7 @@ export default function Dashboard() {
         <div className="mt-12 p-4 rounded-lg border border-border bg-card">
           <h3 className="text-sm font-mono text-muted-foreground mb-3">Connected Data Sources</h3>
           <div className="flex flex-wrap gap-2">
-            {['Alpha Vantage', 'Financial Modeling Prep', 'Groq AI', 'Polygon.io', 'Finnhub', 'Yahoo Finance'].map(src => (
+            {['Alpha Vantage', 'Financial Modeling Prep', 'Groq AI', 'Polygon.io', 'Finnhub', 'Yahoo Finance', 'NASDAQ', 'MarketBeat', 'SEC', 'FRED', 'Twelve Data', 'SimFin', 'Sentisense', 'GuruFocus'].map(src => (
               <span key={src} className="px-2.5 py-1 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                 {src}
               </span>
