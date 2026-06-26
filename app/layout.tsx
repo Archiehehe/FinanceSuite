@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Archie's FinanceSuite",
   description: 'A unified suite of financial analysis tools by Archie',
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='1' y='1' width='30' height='30' rx='6' fill='rgb(26,26,26)' stroke='rgb(59,130,246)' stroke-width='2.5'/><text x='16' y='23' text-anchor='middle' fill='rgb(59,130,246)' font-size='17' font-weight='bold' font-family='-apple-system,sans-serif'>F</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='1' y='1' width='30' height='30' rx='6' fill='rgb(26,26,26)' stroke='rgb(59,130,246)' stroke-width='2'/><text x='16' y='23' text-anchor='middle' fill='rgb(59,130,246)' font-size='17' font-weight='bold' font-family='-apple-system,sans-serif'>A</text></svg>",
   },
 }
 
