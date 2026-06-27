@@ -99,37 +99,31 @@ export default function Dashboard() {
               </Link>
             )
           })}
-        </div>
 
-        {/* External Apps */}
-        <div className="mt-10">
-          <div className="flex items-center gap-2 mb-4">
-            <h2 className="text-xs font-mono text-muted-foreground uppercase tracking-wider">More Apps</h2>
-            <div className="flex-1 h-px bg-border" />
-          </div>
+          {/* WallStreetScout — external app card */}
           <a
             href="https://wallstreetscout.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative overflow-hidden rounded-lg border border-border bg-card hover:bg-accent/50 transition-all p-5 flex items-start gap-4"
+            className="group relative overflow-hidden rounded-lg border border-border bg-card hover:bg-accent/50 transition-all p-5"
+            style={{ animationDelay: `${TOOLS.length * 50}ms` }}
           >
-            <div className="p-2.5 rounded-lg border bg-sky-500/10 text-sky-500 border-sky-500/20 shrink-0">
-              <Telescope size={22} />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-1">
-                <h3 className="font-semibold text-foreground">WallStreetScout</h3>
-                <span className="px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wider font-mono bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center gap-1">
-                  <ExternalLink size={9} />
-                  external
-                </span>
+            <div className="flex items-start gap-4">
+              <div className="p-2.5 rounded-lg border bg-sky-500/10 text-sky-500 border-sky-500/20">
+                <Telescope size={22} />
               </div>
-              <p className="text-xs font-mono mb-2 text-sky-500/70">AI-powered financial news &amp; market scouting</p>
-              <p className="text-sm text-muted-foreground">
-                Real-time financial news feed, curated baskets, watchlist tracking, and AI-summarised market intelligence — all in one scout dashboard.
-              </p>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-semibold text-foreground truncate">WallStreetScout</h3>
+                  <span className="px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wider font-mono bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center gap-1">
+                    <ExternalLink size={9} />
+                    app
+                  </span>
+                </div>
+                <p className="text-xs font-mono mb-2 text-sky-500/70">AI-powered financial news &amp; market scouting</p>
+                <p className="text-sm text-muted-foreground">Real-time financial news feed, curated baskets, watchlist tracking, and AI-summarised market intelligence — all in one scout dashboard.</p>
+              </div>
             </div>
-            <ExternalLink size={14} className="text-muted-foreground/40 group-hover:text-sky-400 transition-colors shrink-0 mt-1" />
             <div className="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity from-transparent via-sky-500/20 to-transparent" />
           </a>
         </div>
