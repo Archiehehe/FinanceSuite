@@ -7,21 +7,21 @@ import { TOOLS } from '@/lib/constants'
 import {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
   TrendingDown, Receipt, Mountain, Activity, FolderOpen,
-  ChevronLeft, ChevronRight, LayoutDashboard, Telescope, ExternalLink
+  ChevronLeft, ChevronRight, LayoutDashboard, Telescope
 } from 'lucide-react'
 import { useState } from 'react'
 import ApiStatus from './api-status'
 
 const iconMap: Record<string, React.ElementType> = {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
-  TrendingDown, Receipt, Mountain, Activity, FolderOpen
+  TrendingDown, Receipt, Mountain, Activity, FolderOpen, Telescope
 }
 
 const colorMap: Record<string, string> = {
   amber: 'text-amber-500', blue: 'text-blue-500', purple: 'text-purple-500',
   green: 'text-green-500', rose: 'text-rose-500', indigo: 'text-indigo-500',
   red: 'text-red-500', cyan: 'text-cyan-500', emerald: 'text-emerald-500',
-  orange: 'text-orange-500', teal: 'text-teal-500',
+  orange: 'text-orange-500', teal: 'text-teal-500', sky: 'text-sky-500',
 }
 
 const activeBgMap: Record<string, string> = {
@@ -36,6 +36,7 @@ const activeBgMap: Record<string, string> = {
   emerald: 'bg-emerald-500/10 text-emerald-500',
   orange: 'bg-orange-500/10 text-orange-500',
   teal: 'bg-teal-500/10 text-teal-500',
+  sky: 'bg-sky-500/10 text-sky-500',
 }
 
 export default function Sidebar() {
@@ -114,31 +115,6 @@ export default function Sidebar() {
             </Link>
           )
         })}
-
-        {/* More Apps */}
-        <div className="pt-2 pb-1">
-          {!collapsed && (
-            <p className="px-3 text-xs text-muted-foreground uppercase tracking-wider font-mono">More Apps</p>
-          )}
-        </div>
-        <a
-          href="https://wallstreetscout.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title={collapsed ? 'WallStreetScout' : undefined}
-          className="flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors group text-muted-foreground hover:text-foreground hover:bg-accent"
-        >
-          <Telescope size={18} className="text-sky-500 shrink-0" />
-          {!collapsed && (
-            <div className="flex-1 min-w-0">
-              <div className="truncate flex items-center gap-1">
-                WallStreetScout
-                <ExternalLink size={10} className="opacity-50" />
-              </div>
-              <div className="text-[10px] text-muted-foreground truncate opacity-60">Financial news &amp; market intel</div>
-            </div>
-          )}
-        </a>
       </nav>
 
       <ApiStatus collapsed={collapsed} />

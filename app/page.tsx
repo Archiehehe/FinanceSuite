@@ -5,13 +5,13 @@ import { TOOLS } from '@/lib/constants'
 import {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
   TrendingDown, Receipt, Mountain, Activity, FolderOpen,
-  Telescope, ExternalLink
+  Telescope
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const iconMap: Record<string, React.ElementType> = {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
-  TrendingDown, Receipt, Mountain, Activity, FolderOpen
+  TrendingDown, Receipt, Mountain, Activity, FolderOpen, Telescope
 }
 
 const colorMap: Record<string, string> = {
@@ -26,13 +26,14 @@ const colorMap: Record<string, string> = {
   emerald: 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
   orange: 'bg-orange-500/10 text-orange-500 border-orange-500/20',
   teal: 'bg-teal-500/10 text-teal-500 border-teal-500/20',
+  sky: 'bg-sky-500/10 text-sky-500 border-sky-500/20',
 }
 
 const taglineColorMap: Record<string, string> = {
   amber: 'text-amber-500/70', blue: 'text-blue-500/70', purple: 'text-purple-500/70',
   green: 'text-green-500/70', rose: 'text-rose-500/70', indigo: 'text-indigo-500/70',
   red: 'text-red-500/70', cyan: 'text-cyan-500/70', emerald: 'text-emerald-500/70',
-  orange: 'text-orange-500/70', teal: 'text-teal-500/70',
+  orange: 'text-orange-500/70', teal: 'text-teal-500/70', sky: 'text-sky-500/70',
 }
 
 const gradientMap: Record<string, string> = {
@@ -47,6 +48,7 @@ const gradientMap: Record<string, string> = {
   emerald: 'from-transparent via-emerald-500/20 to-transparent',
   orange: 'from-transparent via-orange-500/20 to-transparent',
   teal: 'from-transparent via-teal-500/20 to-transparent',
+  sky: 'from-transparent via-sky-500/20 to-transparent',
 }
 
 export default function Dashboard() {
@@ -99,33 +101,6 @@ export default function Dashboard() {
               </Link>
             )
           })}
-
-          {/* WallStreetScout — external app card */}
-          <a
-            href="https://wallstreetscout.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative overflow-hidden rounded-lg border border-border bg-card hover:bg-accent/50 transition-all p-5"
-            style={{ animationDelay: `${TOOLS.length * 50}ms` }}
-          >
-            <div className="flex items-start gap-4">
-              <div className="p-2.5 rounded-lg border bg-sky-500/10 text-sky-500 border-sky-500/20">
-                <Telescope size={22} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-semibold text-foreground truncate">WallStreetScout</h3>
-                  <span className="px-1.5 py-0.5 rounded text-[10px] uppercase tracking-wider font-mono bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center gap-1">
-                    <ExternalLink size={9} />
-                    app
-                  </span>
-                </div>
-                <p className="text-xs font-mono mb-2 text-sky-500/70">AI-powered financial news &amp; market scouting</p>
-                <p className="text-sm text-muted-foreground">Real-time financial news feed, curated baskets, watchlist tracking, and AI-summarised market intelligence — all in one scout dashboard.</p>
-              </div>
-            </div>
-            <div className="absolute inset-x-0 bottom-0 h-[1px] bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity from-transparent via-sky-500/20 to-transparent" />
-          </a>
         </div>
 
         {/* API Status */}

@@ -79,6 +79,16 @@ export const TOOLS = [
     route: '/portfolio-merge',
     status: 'live' as const,
   },
+  {
+    id: 'wallstreet-scout',
+    name: 'WallStreetScout',
+    tagline: 'AI-powered financial news & market scouting',
+    description: 'Real-time financial news feed, curated baskets, watchlist tracking, and AI-summarised market intelligence — all in one scout dashboard.',
+    icon: 'Telescope',
+    color: 'sky',
+    route: '/wallstreet-scout',
+    status: 'live' as const,
+  },
 ]
 
 
