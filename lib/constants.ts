@@ -50,6 +50,16 @@ export const TOOLS = [
     status: 'live' as const,
   },
   {
+    id: 'wallstreet-scout',
+    name: 'WallStreetScout',
+    tagline: 'AI-powered financial news & market scouting',
+    description: 'Real-time financial news feed, curated baskets, watchlist tracking, and AI-summarised market intelligence — all in one scout dashboard.',
+    icon: 'Telescope',
+    color: 'sky',
+    route: '/wallstreet-scout',
+    status: 'live' as const,
+  },
+  {
     id: 'superinvestor-lab',
     name: 'SuperInvestor Lab',
     tagline: 'Analyze stocks through legendary investors',
@@ -77,16 +87,6 @@ export const TOOLS = [
     icon: 'FolderOpen',
     color: 'teal',
     route: '/portfolio-merge',
-    status: 'live' as const,
-  },
-  {
-    id: 'wallstreet-scout',
-    name: 'WallStreetScout',
-    tagline: 'AI-powered financial news & market scouting',
-    description: 'Real-time financial news feed, curated baskets, watchlist tracking, and AI-summarised market intelligence — all in one scout dashboard.',
-    icon: 'Telescope',
-    color: 'sky',
-    route: '/wallstreet-scout',
     status: 'live' as const,
   },
 ]
