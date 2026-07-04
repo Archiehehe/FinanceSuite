@@ -50,6 +50,16 @@ export const TOOLS = [
     status: 'live' as const,
   },
   {
+    id: 'supply-atlas',
+    name: 'Supply Atlas',
+    tagline: 'Supply-chain exposure intelligence',
+    description: 'Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks.',
+    icon: 'Globe',
+    color: 'cyan',
+    route: '/supply-atlas',
+    status: 'live' as const,
+  },
+  {
     id: 'wallstreet-scout',
     name: 'WallStreetScout',
     tagline: 'AI-powered financial news & market scouting',
@@ -87,16 +97,6 @@ export const TOOLS = [
     icon: 'FolderOpen',
     color: 'teal',
     route: '/portfolio-merge',
-    status: 'live' as const,
-  },
-  {
-    id: 'supply-atlas',
-    name: 'Supply Atlas',
-    tagline: 'Supply-chain exposure intelligence',
-    description: 'Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks.',
-    icon: 'Globe',
-    color: 'cyan',
-    route: '/supply-atlas',
     status: 'live' as const,
   },
 ]
