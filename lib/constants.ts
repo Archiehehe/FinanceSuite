@@ -89,6 +89,16 @@ export const TOOLS = [
     route: '/portfolio-merge',
     status: 'live' as const,
   },
+  {
+    id: 'supply-atlas',
+    name: 'Supply Atlas',
+    tagline: 'Supply-chain exposure intelligence',
+    description: 'Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks.',
+    icon: 'Globe',
+    color: 'cyan',
+    route: '/supply-atlas',
+    status: 'live' as const,
+  },
 ]
 
 
