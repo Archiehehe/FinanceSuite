@@ -80,6 +80,16 @@ export const TOOLS = [
     status: 'live' as const,
   },
   {
+    id: 'peer-comparison',
+    name: 'Peer Comparison',
+    tagline: 'S&P 500 peer valuation analysis',
+    description: 'Compare company valuation multiples against S&P 500 peers matched by sector and industry.',
+    icon: 'GitCompare',
+    color: 'indigo',
+    route: '/peer-comparison',
+    status: 'live' as const,
+  },
+  {
     id: 'ath-distance',
     name: 'ATH Distance',
     tagline: 'Distance from all-time-highs by sector',
