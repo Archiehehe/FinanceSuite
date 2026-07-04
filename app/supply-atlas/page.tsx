@@ -5,10 +5,10 @@ import { Globe, Library, GitBranch, Map } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const TABS = [
-  { id: 'home', label: 'Home', icon: Globe, href: 'https://supply-atlas1.lovable.app/' },
-  { id: 'themes', label: 'Coverage Library', icon: Library, href: 'https://supply-atlas1.lovable.app/themes' },
-  { id: 'runs', label: 'Research Runs', icon: GitBranch, href: 'https://supply-atlas1.lovable.app/runs' },
-  { id: 'maps', label: 'Published Maps', icon: Map, href: 'https://supply-atlas1.lovable.app/maps' },
+  { id: 'home', label: 'Home', icon: Globe, href: 'https://supplyatlas.vercel.app/' },
+  { id: 'themes', label: 'Coverage Library', icon: Library, href: 'https://supplyatlas.vercel.app/themes' },
+  { id: 'runs', label: 'Research Runs', icon: GitBranch, href: 'https://supplyatlas.vercel.app/runs' },
+  { id: 'maps', label: 'Published Maps', icon: Map, href: 'https://supplyatlas.vercel.app/maps' },
 ]
 
 export default function SupplyAtlasPage() {
