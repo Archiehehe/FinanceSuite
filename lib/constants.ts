@@ -60,6 +60,16 @@ export const TOOLS = [
     status: 'live' as const,
   },
   {
+    id: 'supply-atlas',
+    name: 'Supply Atlas',
+    tagline: 'Supply-chain exposure intelligence',
+    description: 'Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks.',
+    icon: 'Globe',
+    color: 'cyan',
+    route: '/supply-atlas',
+    status: 'live' as const,
+  },
+  {
     id: 'wallstreet-scout',
     name: 'WallStreetScout',
     tagline: 'AI-powered financial news & market scouting',
@@ -77,16 +87,6 @@ export const TOOLS = [
     icon: 'GraduationCap',
     color: 'purple',
     route: '/superinvestor-lab',
-    status: 'live' as const,
-  },
-  {
-    id: 'peer-comparison',
-    name: 'Peer Comparison',
-    tagline: 'S&P 500 peer valuation analysis',
-    description: 'Compare company valuation multiples against S&P 500 peers matched by sector and industry.',
-    icon: 'GitCompare',
-    color: 'indigo',
-    route: '/peer-comparison',
     status: 'live' as const,
   },
   {

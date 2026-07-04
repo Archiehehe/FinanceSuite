@@ -5,14 +5,13 @@ import { TOOLS } from '@/lib/constants'
 import {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
   TrendingDown, Receipt, Mountain, Activity, FolderOpen,
-  Telescope, Globe, GitCompare
+  Telescope, Globe
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const iconMap: Record<string, React.ElementType> = {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
-  TrendingDown, Receipt, Mountain, Activity, FolderOpen, Telescope,
-  Globe, GitCompare
+  TrendingDown, Receipt, Mountain, Activity, FolderOpen, Telescope, Globe
 }
 
 const colorMap: Record<string, string> = {
