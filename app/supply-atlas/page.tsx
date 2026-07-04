@@ -12,7 +12,7 @@ export default function SupplyAtlasPage() {
         <h1 className="text-lg font-semibold text-foreground">Supply Atlas</h1>
       </div>
       <iframe
-        src="https://supplyatlas.vercel.app/"
+        src="https://supplychainatlas.lovable.app/"
         className="flex-1 w-full border-0"
         title="Supply Atlas"
         allow="clipboard-read; clipboard-write"
