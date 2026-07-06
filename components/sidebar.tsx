@@ -52,7 +52,7 @@ export default function Sidebar() {
       <div className="flex items-center justify-between p-4 border-b border-border">
         {!collapsed && (
           <Link href="/" className="flex items-center gap-2">
-            <Zap className="text-green-500" size={20} />
+            <img src="https://avatars.githubusercontent.com/u/193579350?v=4" alt="Archie" className="w-5 h-5 rounded-full" />
               <span className="font-bold text-sm tracking-tight">
               <span className="text-green-500">Archie's</span>
               <span className="text-foreground">&nbsp;FinanceSuite</span>
@@ -61,7 +61,7 @@ export default function Sidebar() {
         )}
         {collapsed && (
           <Link href="/" className="mx-auto">
-            <Zap className="text-green-500" size={20} />
+            <img src="https://avatars.githubusercontent.com/u/193579350?v=4" alt="Archie" className="w-5 h-5 rounded-full" />
           </Link>
         )}
         <button

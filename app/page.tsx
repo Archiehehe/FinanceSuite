@@ -59,7 +59,7 @@ export default function Dashboard() {
         {/* Header */}
         <header className="mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Zap className="text-green-500" size={32} />
+            <img src="https://avatars.githubusercontent.com/u/193579350?v=4" alt="Archie" className="w-8 h-8 rounded-full" />
             <h1 className="text-4xl font-bold tracking-tight">
               <span className="text-green-500">Archie's</span>
               <span className="text-foreground">&nbsp;FinanceSuite</span>
