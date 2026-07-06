@@ -59,9 +59,9 @@ export default function Dashboard() {
         {/* Header */}
         <header className="mb-12 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Zap className="text-amber-500" size={32} />
+            <Zap className="text-green-500" size={32} />
             <h1 className="text-4xl font-bold tracking-tight">
-              <span className="text-amber-500">Archie's</span>
+              <span className="text-green-500">Archie's</span>
               <span className="text-foreground">&nbsp;FinanceSuite</span>
             </h1>
           </div>

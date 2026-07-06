@@ -52,16 +52,16 @@ export default function Sidebar() {
       <div className="flex items-center justify-between p-4 border-b border-border">
         {!collapsed && (
           <Link href="/" className="flex items-center gap-2">
-            <Zap className="text-amber-500" size={20} />
+            <Zap className="text-green-500" size={20} />
               <span className="font-bold text-sm tracking-tight">
-              <span className="text-amber-500">Archie's</span>
+              <span className="text-green-500">Archie's</span>
               <span className="text-foreground">&nbsp;FinanceSuite</span>
             </span>
           </Link>
         )}
         {collapsed && (
           <Link href="/" className="mx-auto">
-            <Zap className="text-amber-500" size={20} />
+            <Zap className="text-green-500" size={20} />
           </Link>
         )}
         <button
@@ -78,7 +78,7 @@ export default function Sidebar() {
           className={cn(
             "flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors",
             pathname === '/'
-              ? 'bg-amber-500/10 text-amber-500'
+              ? 'bg-green-500/10 text-green-500'
               : 'text-muted-foreground hover:text-foreground hover:bg-accent'
           )}
         >
