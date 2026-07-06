@@ -8,12 +8,12 @@ A unified collection of financial analysis tools — stock research, peer compar
 
 | Tool | Description |
 |------|-------------|
-| **Earnings Intel** | Earnings calendar & insider tracking — track reports, estimates, price reactions, and insider transactions |
+| **Supply Atlas** | Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks |
 | **Sector Momentum** | Sector rotation across GICS sectors and thematic baskets with relative strength, volatility, and RSI |
 | **SnapJudgement** | Enter any ticker → structured investment brief with valuation, sentiment, financials, and price behavior |
 | **Market Narrative** | Translates price action into structured narratives with sector and regime context |
 | **DipSnipe** | Identify and analyze daily stock market losers across sectors, industries, and market-cap ranges |
-| **Supply Atlas** | Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks |
+| **Earnings Intel** | Earnings calendar & insider tracking — track reports, estimates, price reactions, and insider transactions |
 | **WallStreetScout** | AI-powered financial news feed, curated baskets, watchlist tracking, and summarised market intelligence |
 | **ThesisPath** | Structured equity research, one subtheme at a time — curated universe with AI-backed question packs |
 | **SuperInvestor Lab** | Analyze stocks through 25+ legendary investors — Graham, Buffett, Lynch, and more |
