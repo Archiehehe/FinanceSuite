@@ -15,6 +15,7 @@ A unified collection of financial analysis tools — stock research, peer compar
 | **DipSnipe** | Identify and analyze daily stock market losers across sectors, industries, and market-cap ranges |
 | **Supply Atlas** | Map the end-to-end economic chain behind any investable subtheme — companies, products, regions, and risks |
 | **WallStreetScout** | AI-powered financial news feed, curated baskets, watchlist tracking, and summarised market intelligence |
+| **ThesisPath** | Structured equity research, one subtheme at a time — curated universe with AI-backed question packs |
 | **SuperInvestor Lab** | Analyze stocks through 25+ legendary investors — Graham, Buffett, Lynch, and more |
 | **Peer Comparison** | Compare company valuation multiples against S&P 500 peers by sector and industry |
 | **ATH Distance** | Distance from all-time highs, broken down by sector and industry with filters |
