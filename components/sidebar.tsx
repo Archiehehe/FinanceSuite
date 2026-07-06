@@ -7,7 +7,7 @@ import { TOOLS } from '@/lib/constants'
 import {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
   TrendingDown, Receipt, Mountain, Activity, FolderOpen,
-  ChevronLeft, ChevronRight, LayoutDashboard, Telescope, Globe, GitCompare
+  ChevronLeft, ChevronRight, LayoutDashboard, Telescope, Globe, GitCompare, BookOpen
 } from 'lucide-react'
 import { useState } from 'react'
 import ApiStatus from './api-status'
@@ -15,7 +15,7 @@ import ApiStatus from './api-status'
 const iconMap: Record<string, React.ElementType> = {
   Zap, BarChart3, GraduationCap, Calendar, FileText, Brain,
   TrendingDown, Receipt, Mountain, Activity, FolderOpen, Telescope,
-  Globe, GitCompare
+  Globe, GitCompare, BookOpen
 }
 
 const colorMap: Record<string, string> = {

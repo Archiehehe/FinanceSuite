@@ -70,6 +70,16 @@ export const TOOLS = [
     status: 'live' as const,
   },
   {
+    id: 'thesis-path',
+    name: 'ThesisPath',
+    tagline: 'Structured equity research, one subtheme at a time',
+    description: 'Pick a ticker from a curated universe and work through subtheme-specific question packs — each question backed by its own bounded AI assistant.',
+    icon: 'BookOpen',
+    color: 'green',
+    route: '/thesis-path',
+    status: 'live' as const,
+  },
+  {
     id: 'superinvestor-lab',
     name: 'SuperInvestor Lab',
     tagline: 'Analyze stocks through legendary investors',
