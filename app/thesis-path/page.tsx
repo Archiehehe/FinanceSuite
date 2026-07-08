@@ -12,7 +12,7 @@ export default function ThesisPathPage() {
         <h1 className="text-lg font-semibold text-foreground">ThesisPath</h1>
       </div>
       <iframe
-        src="https://thesispath.vercel.app/"
+        src="https://thesispath.lovable.app"
         className="flex-1 w-full border-0"
         title="ThesisPath"
         allow="clipboard-read; clipboard-write"
